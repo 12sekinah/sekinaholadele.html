@@ -1,0 +1,104 @@
+body {
+    background-color: hsl(217, 54%, 11%);
+    font-size: 18px;
+  }
+.main{
+    background-color:  hsl(216, 50%, 16%);
+    display: block;
+    margin: auto;
+    max-width: max-content;
+    padding: 15px;
+    margin-top: 20px;
+    font-family: "outfit" sans-serif;
+    font-size: 18px;
+    border-radius: 10px;
+  }
+.image-container {
+  /* display: block; */ 
+  /* margin: auto; */
+  /*all this above no really dey necessary in this aspect of code*/ 
+  width: 100%;
+  height: 300px;
+}
+.image-container img {
+  height: 100%;
+  /* position: absolute; */
+  width: 100%;
+  border-radius: 10px;
+ }
+.main-image {
+    width: 100%;
+    height: 320px;
+    margin: auto;
+    max-width: 100%;
+    display: flex;
+    object-fit: cover; /*cover is more preferable to use than contain*/
+}
+.image-container .hover-image {
+  position: absolute;
+  width: 10%;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+                    /*x-axis  y-axis*/
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity .2s;
+  height: 100px;
+  /* width: 150px;    you already use width at the upper part, why repetition?*/
+}
+.image-container:hover .hover-image {
+  opacity: 1;
+}
+#first-word {
+    color: white;
+    /* width: 300px; */ /*why giving text a width*/
+}
+#second-word {
+   color: hsl(215, 51%, 70%);
+   font-size: 18px;
+   margin: -5px auto;
+}
+.number {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: hsl(178, 100%, 50%);
+}
+.time {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 5px;
+  margin-top: -55px;
+  color: hsl(215, 51%, 70%);
+}
+.ruler {
+    border-bottom: 1px solid hsl(215, 51%, 70%);
+    width: 280px;
+    margin-top: 5PX;
+}
+.avatar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color:  hsl(215, 51%, 70%);
+    margin-top: 7px;
+}
+.image-avatar {
+    width: fit-content;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+span {
+    color: white;
+}
+.attribution {
+    font-size: 11px; 
+    text-align: center;
+}
+  .attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+  
